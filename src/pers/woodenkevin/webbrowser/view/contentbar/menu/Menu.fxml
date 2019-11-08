@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:id="menu"
+      fx:controller="pers.woodenkevin.webbrowser.controller.contentbar.MenuController"
+      stylesheets="@Menu.css"
+      prefWidth="400.0">
+</VBox>
+<!-- 该版本暂时不支持显示此界面 -->

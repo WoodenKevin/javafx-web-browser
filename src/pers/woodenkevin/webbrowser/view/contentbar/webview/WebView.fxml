@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.web.WebView?>
+<HBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="pers.woodenkevin.webbrowser.controller.contentbar.WebViewController"
+      prefHeight="400.0" prefWidth="600.0">
+    <WebView id="webView" fx:id="webView" HBox.hgrow="ALWAYS"/>
+</HBox>

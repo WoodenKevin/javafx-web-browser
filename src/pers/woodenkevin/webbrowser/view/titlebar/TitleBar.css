@@ -1,0 +1,24 @@
+#titleBar {
+    -fx-background-color: #CCCCCC;
+    -fx-alignment: center-left;
+}
+
+#title {
+    -fx-padding: 0 55 0 17.5;
+    -fx-background-color: transparent;
+}
+
+#minBtn, #maxBtn, #closeBtn {
+    -fx-max-width: 50;
+    -fx-max-height: 30;
+    -fx-min-width: 50;
+    -fx-min-height: 30;
+}
+
+#minBtn:hover, #maxBtn:hover {
+    -fx-background-color: #C6C6C6;
+}
+
+#closeBtn:hover {
+    -fx-background-color: #E81123;
+}

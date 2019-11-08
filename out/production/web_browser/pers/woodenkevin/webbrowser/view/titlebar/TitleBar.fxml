@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<HBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:id="titleBar"
+      fx:controller="pers.woodenkevin.webbrowser.controller.titlebar.TitleBarController"
+      stylesheets="@TitleBar.css"
+      prefHeight="30.0">
+    <Label id="title" fx:id="title"
+           text="空白页"
+           HBox.hgrow="ALWAYS"
+           onMousePressed="#windowDragStart" onMouseDragged="#windowDragging"/>
+    <Button id="minBtn" fx:id="minBtn" HBox.hgrow="NEVER" onAction="#minimizeApp">
+        <tooltip>
+            <Tooltip text="最小化"/>
+        </tooltip>
+        <graphic>
+            <ImageView fitWidth="15.0" fitHeight="15.0" preserveRatio="true"
+                       pickOnBounds="true">
+                <Image url="@../../resource/icon/minBtn.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button id="maxBtn" fx:id="maxBtn" HBox.hgrow="NEVER" onAction="#maximizeApp">
+        <tooltip>
+            <Tooltip text="最大化"/>
+        </tooltip>
+        <graphic>
+            <ImageView fx:id="maxBtnImg"
+                       fitWidth="15.0" fitHeight="15.0" preserveRatio="true"
+                       pickOnBounds="true">
+                <Image url="@../../resource/icon/maxBtn.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button id="closeBtn" fx:id="closeBtn"
+            HBox.hgrow="NEVER"
+            onAction="#closeApp" onMouseEntered="#closeBtnOnMouseEntered" onMouseExited="#closeBtnOnMouseExited">
+        <tooltip>
+            <Tooltip text="关闭"/>
+        </tooltip>
+        <graphic>
+            <ImageView fx:id="closeBtnImg"
+                       fitWidth="15.0" fitHeight="15.0" preserveRatio="true"
+                       pickOnBounds="true">
+                <Image url="@../../resource/icon/closeBtn.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+</HBox>

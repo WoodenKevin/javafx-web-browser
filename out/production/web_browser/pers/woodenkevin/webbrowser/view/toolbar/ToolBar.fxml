@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<HBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:id="toolBar"
+      fx:controller="pers.woodenkevin.webbrowser.controller.toolbar.ToolBarController"
+      stylesheets="@ToolBar.css"
+      prefHeight="40.0"
+      onMouseClicked="#toolBarOnMouseClicked">
+    <Button id="backwardBtnUnable" fx:id="backwardBtn" HBox.hgrow="NEVER" onAction="#backwardBtnOnAction">
+        <graphic>
+            <ImageView fx:id="backwardBtnImg"
+                       fitWidth="18.0" fitHeight="18.0" preserveRatio="true"
+                       pickOnBounds="true">
+                <Image url="@../../resource/icon/backwardBtn_unable.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button id="forwardBtnUnable" fx:id="forwardBtn" HBox.hgrow="NEVER" onAction="#forwardBtnOnAction">
+        <graphic>
+            <ImageView fx:id="forwardBtnImg"
+                       fitWidth="18.0" fitHeight="18.0" preserveRatio="true"
+                       pickOnBounds="true">
+                <Image url="@../../resource/icon/forwardBtn_unable.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button id="refreshBtn" fx:id="refreshBtn" HBox.hgrow="NEVER" onAction="#refreshBtnOnAction">
+        <tooltip>
+            <Tooltip text="刷新"/>
+        </tooltip>
+        <graphic>
+            <ImageView fx:id="refreshBtnImg"
+                       fitWidth="18.0" fitHeight="18.0" preserveRatio="true"
+                       pickOnBounds="true">
+                <Image url="@../../resource/icon/refreshBtn.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button id="homeBtn" fx:id="homeBtn" HBox.hgrow="NEVER" onAction="#homeBtnOnAction">
+        <tooltip>
+            <Tooltip text="主页"/>
+        </tooltip>
+        <graphic>
+            <ImageView fitWidth="18.0" fitHeight="18.0" preserveRatio="true"
+                       pickOnBounds="true">
+                <Image url="@../../resource/icon/homeBtn.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <TextField id="urlBar" fx:id="urlBar"
+               HBox.hgrow="ALWAYS"
+               onMouseClicked="#urlBarOnMouseClicked" onMouseExited="#urlBarOnMouseExited" onKeyPressed="#urlBarOnKeyPressed">
+        <tooltip>
+            <Tooltip text="输入网址"/>
+        </tooltip>
+        <HBox.margin>
+            <Insets left="5.0" right="5.0"/>
+        </HBox.margin>
+    </TextField>
+    <Button id="add2FavBtn" fx:id="add2FavBtn" HBox.hgrow="NEVER" onAction="#add2FavBtnOnAction">
+        <tooltip>
+            <Tooltip text="添加到收藏夹"/>
+        </tooltip>
+        <graphic>
+            <ImageView fx:id="add2FavBtnImg"
+                       fitWidth="18.0" fitHeight="18.0" preserveRatio="true"
+                       pickOnBounds="true">
+                <Image url="@../../resource/icon/add2FavBtn.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <!-- 该版本暂不支持 -->
+    <Button id="saveBtn" fx:id="saveBtn" HBox.hgrow="NEVER">
+        <tooltip>
+            <Tooltip text="保存当前网页（暂不支持）"/>
+        </tooltip>
+        <graphic>
+            <ImageView fitWidth="18.0" fitHeight="18.0" preserveRatio="true"
+                       pickOnBounds="true">
+                <Image url="@../../resource/icon/saveBtn.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button id="listBtn" fx:id="listBtn" HBox.hgrow="NEVER" onAction="#listBtnOnAction">
+        <tooltip>
+            <Tooltip text="收藏夹/历史记录"/>
+        </tooltip>
+        <graphic>
+            <ImageView fitWidth="18.0" fitHeight="18.0" preserveRatio="true"
+                       pickOnBounds="true">
+                <Image url="@../../resource/icon/listBtn.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <!-- 该版本暂不支持 -->
+    <Button id="moreBtn" fx:id="moreBtn" HBox.hgrow="NEVER">
+        <tooltip>
+            <Tooltip text="更多选项（暂不支持）"/>
+        </tooltip>
+        <graphic>
+            <ImageView fitWidth="18.0" fitHeight="18.0" preserveRatio="true"
+                       pickOnBounds="true">
+                <Image url="@../../resource/icon/moreBtn.png"/>
+            </ImageView>
+        </graphic>
+    </Button>
+</HBox>

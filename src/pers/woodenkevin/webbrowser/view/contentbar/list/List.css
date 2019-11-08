@@ -1,0 +1,100 @@
+#tabBar {
+    -fx-background-color: #CCCCCC;
+}
+
+#closeBtn {
+    -fx-max-width: 50;
+    -fx-max-height: 50;
+    -fx-min-width: 50;
+    -fx-min-height: 50;
+}
+
+#favouritesListTab, #historyListTab {
+    -fx-max-width: 50;
+    -fx-max-height: 50;
+    -fx-min-width: 50;
+    -fx-min-height: 50;
+    -fx-border-color: #0078D7;
+    -fx-alignment: center;
+}
+
+#closeBtn:hover,
+#favouritesListTab:hover, #historyListTab:hover {
+    -fx-background-color: #B8B8B8;
+}
+
+#listView {
+    -fx-padding: 0 25 0 25;
+    -fx-background-color: #E6E6E6;
+}
+
+#header {
+    -fx-alignment: center-left;
+}
+
+#tabTitle {
+    -fx-max-width: 250;
+    -fx-max-height: 75;
+    -fx-min-width: 250;
+    -fx-min-height: 75;
+    -fx-font-size: 30;
+    -fx-font-weight: bold;
+}
+
+#editBtn {
+    -fx-max-width: 50;
+    -fx-max-height: 50;
+    -fx-min-width: 50;
+    -fx-min-height: 50;
+}
+
+#editBtn:hover {
+    -fx-background-color: #CFCFCF;
+}
+
+#listContentWrapper {
+    -fx-padding: 10 0 0 0;
+    -fx-border-width: 2 0 0 0;
+    -fx-border-color: #8A8A8A;
+}
+
+.list-view {
+    -fx-background-color: #E6E6E6;
+}
+
+.list-cell {
+    -fx-cell-size: 40;
+    -fx-background-color: #E6E6E6;
+    -fx-font-size: 15;
+}
+
+.list-cell:hover {
+    -fx-background-color: #CFCFCF;
+}
+
+.list-cell:selected {
+    -fx-background-color: #CFCFCF;
+    -fx-text-fill: #000000;
+}
+
+.list-cell:empty {
+    -fx-background-color: transparent;
+}
+
+#footer {
+    -fx-alignment: center;
+}
+
+#clearBtn {
+    -fx-max-width: 160;
+    -fx-max-height: 35;
+    -fx-min-width: 160;
+    -fx-min-height: 35;
+    -fx-background-color: #B8B8B8;
+    -fx-font-size: 15;
+}
+
+#clearBtn:hover {
+    -fx-border-width: 2;
+    -fx-border-color: #6E6E6E;
+}

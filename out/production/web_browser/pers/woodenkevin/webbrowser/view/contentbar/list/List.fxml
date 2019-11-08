@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<HBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:id="list"
+      fx:controller="pers.woodenkevin.webbrowser.controller.contentbar.ListController"
+      stylesheets="@List.css"
+      prefWidth="400.0">
+    <VBox id="tabBar" fx:id="tabBar" prefWidth="50.0" HBox.hgrow="NEVER">
+        <Button id="closeBtn" fx:id="closeBtn"
+                VBox.vgrow="NEVER"
+                onAction="#closeBtnOnAction">
+            <tooltip>
+                <Tooltip text="关闭"/>
+            </tooltip>
+            <graphic>
+                <ImageView fitWidth="20.0" fitHeight="20.0" preserveRatio="true"
+                           pickOnBounds="true">
+                    <Image url="@../../../resource/icon/closeBtn_list.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Label id="favouritesListTab" fx:id="favouritesListTab"
+               VBox.vgrow="NEVER"
+               onMouseClicked="#favouritesTabOnMouseClicked">
+            <tooltip>
+                <Tooltip text="收藏夹"/>
+            </tooltip>
+            <graphic>
+                <ImageView fitWidth="20.0" fitHeight="20.0" preserveRatio="true"
+                           pickOnBounds="true">
+                    <Image url="@../../../resource/icon/favouritesListTab.png"/>
+                </ImageView>
+            </graphic>
+        </Label>
+        <Label id="historyListTab" fx:id="historyListTab"
+               VBox.vgrow="NEVER" onMouseClicked="#historyTabOnMouseClicked">
+            <tooltip>
+                <Tooltip text="历史记录"/>
+            </tooltip>
+            <graphic>
+                <ImageView fitWidth="20.0" fitHeight="20.0" preserveRatio="true"
+                           pickOnBounds="true">
+                    <Image url="@../../../resource/icon/historyListTab.png"/>
+                </ImageView>
+            </graphic>
+        </Label>
+    </VBox>
+    <VBox id="listView" fx:id="listView" prefWidth="350.0" HBox.hgrow="NEVER">
+        <HBox id="header" fx:id="header"
+              prefHeight="75.0"
+              VBox.vgrow="NEVER">
+            <Label id="tabTitle" fx:id="tabTitle" HBox.hgrow="ALWAYS"/>
+            <Button id="editBtn" fx:id="editBtn" HBox.hgrow="NEVER">
+                <tooltip>
+                    <Tooltip text="编辑"/>
+                </tooltip>
+                <graphic>
+                    <ImageView fx:id="editBtnImg"
+                               fitWidth="20.0" fitHeight="20.0" preserveRatio="true"
+                               pickOnBounds="true">
+                        <Image url="@../../../resource/icon/editBtn.png"/>
+                    </ImageView>
+                </graphic>
+            </Button>
+        </HBox>
+        <VBox id="listContentWrapper" fx:id="listContentWrapper"
+              VBox.vgrow="ALWAYS">
+            <ListView id="listContent" fx:id="listContent"/>
+        </VBox>
+        <HBox id="footer" fx:id="footer"
+              prefHeight="100.0"
+              VBox.vgrow="NEVER">
+            <Button id="clearBtn" fx:id="clearBtn"
+                    text="清空"
+                    HBox.hgrow="ALWAYS"
+                    onAction="#clearBtnOnAction">
+                <tooltip>
+                    <Tooltip text="清空"/>
+                </tooltip>
+            </Button>
+        </HBox>
+    </VBox>
+</HBox>

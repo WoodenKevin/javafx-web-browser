@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="web_browser2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/artifacts/web_browser/bundles/web_browser/app/web_browser.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

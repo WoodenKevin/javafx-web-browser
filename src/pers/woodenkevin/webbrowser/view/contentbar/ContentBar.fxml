@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+<HBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="pers.woodenkevin.webbrowser.controller.contentbar.ContentBarController"
+      prefHeight="400.0" prefWidth="600.0">
+    <fx:include fx:id="webView" source="webview/WebView.fxml" HBox.hgrow="ALWAYS"/>
+    <fx:include fx:id="list" source="list/List.fxml" HBox.hgrow="NEVER"/>
+</HBox>
